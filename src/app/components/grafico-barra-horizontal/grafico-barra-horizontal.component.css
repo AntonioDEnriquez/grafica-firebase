@@ -1,0 +1,5 @@
+.chart-container {
+    /* Para que nos de todo el ancho posible */
+    display: grid;
+    height: 300px;
+}

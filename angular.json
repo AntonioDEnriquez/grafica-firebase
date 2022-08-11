@@ -32,8 +32,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -94,8 +94,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "goty:build:production",
+            "firebaseProject": "firestore-grafica-3a1b7",
+            "firebaseHostingSite": "firestore-grafica-3a1b7"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "8c8b0ba2-edf3-4c5d-a05d-ffdbfd325505"
   }
 }
